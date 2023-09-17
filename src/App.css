@@ -1,0 +1,7 @@
+.containerFather{
+    display: flex;
+    flex-direction: column;
+}
+.containerProducts{
+  height: fit-content;
+}
