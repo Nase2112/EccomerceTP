@@ -11,12 +11,10 @@ aside {
     font-family: sans-serif;
 }
 
-#logo {
-    width: 80px;
-    height: 50px;
-    margin-left: 50px;
-    position: absolute;
-    margin-top: -480px;
+.logo{
+  
+  background-image: url(/public/images/logoblanco.svg) ;
+  
 }
 
 
@@ -97,8 +95,11 @@ form{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 0 16px 16px 0px;
-    background: #020202;
+    border-radius: 0 0px 16px 0px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(29,29,29,1) 48%);
+    box-shadow: 7px 4px 9px -6px rgba(0,0,0,0.75);
+    column-gap: 4rem;
 
 }
 

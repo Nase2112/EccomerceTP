@@ -6,6 +6,7 @@ import Search from './Components/Search'
 import Pages from './Components/Pages'
 import Footer from './Components/Footer';
 import Aside from './Components/Aside';
+import Proveedoras from "./Components/Proveedoreas"
 
 function App() {
 
@@ -51,7 +52,9 @@ function App() {
     <div className='main'>
 
     <Aside function1 = { handleChangeText} function2 =  { handleSubmit}/>
-
+      <div className="Select"> 
+          <Proveedoras/>
+      </div>
 
       <div className='containerFather'>
 

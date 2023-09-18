@@ -20,7 +20,7 @@ return(
         <aside>
         <nav class="nav">
             <ul class="lista">
-                <img src="./img/logo blanco.png" id="logo"/>
+                <div className="logo"/>
                 
                 {/* <div className="search_bar">
                 <label for=""></label>

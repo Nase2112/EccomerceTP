@@ -7,8 +7,10 @@
     font-family: Inter;
     font-size: 23px;
     width: 100%;
-    background-color: #7B7B7B;
+    background: rgb(123,123,123);
+    background: linear-gradient(180deg, rgba(123,123,123,1) 0%, rgba(94,94,94,1) 48%);  
     height: 280px;
+    color: #ffff;
 }
 
 .suscription-container input{
@@ -34,7 +36,7 @@ height: 37px;
     flex-direction: row;
     justify-content: center;
     position: relative;
-    height: 220px;
+    height: 25vh;
     }
 
 
