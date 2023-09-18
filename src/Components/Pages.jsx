@@ -23,9 +23,9 @@ const Pages = ({nroPaginas,changePage,productsperPage}) => {
 
 return (
     <div className="containerButtons">
-        <button onClick={() => {changePage(-productsperPage); handleChangePageMinus(-1) }}disabled={currentPage === 1 ? 'true' : ''}> atras</button>
+        <button onClick={() => {changePage(-productsperPage); handleChangePageMinus(-1) }}disabled={currentPage === 1 ? 'true' : ''}> Atras</button>
         <label>{currentPage} DE {nroPaginas}</label>
-        <button onClick={() => {changePage(productsperPage); handleChangePageSum(1)}} disabled={currentPage >= nroPaginas ? 'disabled' : ''}>adelante</button>
+        <button onClick={() => {changePage(productsperPage); handleChangePageSum(1)}} disabled={currentPage >= nroPaginas ? 'disabled' : ''}>Adelante</button>
         
     </div>
     

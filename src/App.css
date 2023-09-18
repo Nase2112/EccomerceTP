@@ -1,7 +1,27 @@
+
+.main{
+  display: flex;
+  background-image: url(../public/images/Banner.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
 .containerFather{
     display: flex;
     flex-direction: column;
 }
 .containerProducts{
   height: fit-content;
+}
+
+
+
+@media (max-width: 768px) {
+  .main{
+    display: inline;
+  }
+  
+  
 }

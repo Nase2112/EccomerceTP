@@ -1,0 +1,46 @@
+.suscription-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    font-family: Inter;
+    font-size: 23px;
+    width: 100%;
+    background-color: #7B7B7B;
+    height: 280px;
+}
+
+.suscription-container input{
+width: 327px;
+height: 37px;
+}
+
+.suscription-container button{
+    width: 173px;
+    height: 44px;
+    background-color: #4B48D6;
+    color: white;
+
+}
+
+.copyRight{
+    font-size: 15px;
+}
+
+@media (min-width:768px) {
+    .suscription-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    height: 220px;
+    }
+
+
+    .copyRight{
+        position: absolute;
+        bottom: 5px;
+        font-size: 20px;
+}
+}

@@ -2,11 +2,32 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    
+    margin:5rem;
+    padding: 2rem;
+    background-color: #7B7B7B;
+    border: none;
+    border-radius: 10px;
+    color: white;
 
 }
 
 .containerButtons label{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px;
+    padding: 3px;
+    font-size: small;
+    text-wrap:nowrap;
+    
 }
+
+.containerButtons > button{
+    background-color: #4B48D6;
+    color: white;
+   
+}
+
+.containerButtons > button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.322);
+}
+

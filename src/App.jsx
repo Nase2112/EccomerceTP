@@ -4,7 +4,12 @@ import './Components/MostrarDatos.jsx'
 import MostrarDatos from './Components/MostrarDatos.jsx';
 import Search from './Components/Search'
 import Pages from './Components/Pages'
+import Footer from './Components/Footer';
+import Aside from './Components/Aside';
+
 function App() {
+
+
 
   const [products, setProducts] = useState([]);
   const [copiaProducts, setCopiaProducts] = useState([]);
@@ -43,9 +48,13 @@ function App() {
   
   return (
     <>
+    <div className='main'>
+
+    <Aside function1 = { handleChangeText} function2 =  { handleSubmit}/>
+
+
       <div className='containerFather'>
 
-      <Search buscarValor={handleChangeText} handleSubmit={handleSubmit}/>
         <div className="containerProducts"> {/*poner css en App.css y hacer que */}
         
           {products.slice(positionArray,lastPositionArray).map((p) => (
@@ -59,8 +68,12 @@ function App() {
         </div>
         
       </div>
+      </div>
 
-     
+
+     <Footer/>
+
+    
     </>
   )
 }

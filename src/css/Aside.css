@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+aside {
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#logo {
+    width: 80px;
+    height: 50px;
+    margin-left: 50px;
+    position: absolute;
+    margin-top: -480px;
+}
+
+
+form{
+  display: flex;
+  justify-content: center;
+}
+
+.search{
+  height: 2rem;
+  width: 70%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.btn{
+  width: 3rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #4B48D6 ;
+  color: #ffff;
+}
+
+.btn:hover{
+  background-color: #8280df;
+}
+
+
+.search_bar{
+    padding: 1rem 2rem;
+    align-items: baseline;
+}
+
+.search_bar > input{
+    width: 70%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.search_bar > button{
+    background-color: #4B48D6;
+    height: 2rem;
+    width: 4rem;
+    color: #ffff;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-family: Inter;
+}
+
+.search_bar > button:hover{
+    background-color: #8280df;
+}
+
+.nav_link {
+    color: #ffffff;
+    display: block;
+    padding: 15px 0px;
+    text-decoration: none;
+}
+
+.nav_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+.nav_link--inside:hover {
+    background: #0c0c0c;
+
+}
+
+.lista {
+    color: #ffff;
+    width:250px;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0px;
+    background: #020202;
+
+}
+
+.aside_item{
+    padding: 1rem;
+    display: block;
+    font-size: 1.2rem;
+  
+  }
+  
+  .aside_item:hover{
+    background-color: rgb(44, 44, 44);
+  }
+  
+  .aside_title{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .aside_item  span  i{
+    display: inline-block;
+    width: 1.5em;
+  }
+  
+  .aside_title .toggle_btn{
+    cursor: pointer;
+    transition: transform .3s;
+  }
+  
+  .aside_title .open .toggle_btn{
+    transform: rotate(180deg);
+    
+  }
+  
+  .aside_content{
+    font-size: .9rem;
+    padding-top: .5rem;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .open .aside_content{
+    height: auto;
+  }
+
+  
+  li > a{
+    text-decoration: none;
+    color: #ffff;
+   padding: 1rem;
+   font-size: 1.2rem;
+}
+  
+
+
+@media (max-width: 768px){
+
+    .lista {
+        width:100vw;
+        height: 20vh;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    
+
+   li {
+        display: none;
+   }
+    
+}
