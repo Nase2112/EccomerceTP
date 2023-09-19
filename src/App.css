@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
+  overflow: hidden;
 }
 
 .containerFather{
@@ -23,6 +24,8 @@
   .main{
     display: inline-block;
     max-width: 100%;
+    width: calc(100vw - 250px );
+  
     height: auto;
   }
   

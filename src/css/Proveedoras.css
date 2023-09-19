@@ -8,7 +8,11 @@
 }
 
 p{
-    color: white;
+    color: black;
+}
+
+input{
+    color: black;
 }
 
 @media (max-width: 768px ) {

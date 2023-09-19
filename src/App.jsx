@@ -32,6 +32,7 @@ function App() {
 
   const handleChangeSelect = (categoria) => {
     setSelect(categoria)
+    setProducts(copiaProducts.filter((word) => word.category === categoria))
   }
 
   const handleChangePositionArray = (valor) =>{
@@ -47,18 +48,16 @@ function App() {
           .then((res2) => res2.json())
           .then((copia) => setCopiaProducts(copia)))
   }, [])
-  console.log(products);
-  console.log(positionArray)
-  console.log(lastPositionArray)
-  console.log(select);
   
+  //console.log(copiaProducts)
+  console.log(products)
   return (
     <>
     <div className='main'>
 
     <Aside function1 = { handleChangeText} function2 =  { handleSubmit}/>
       <div className="Select"> 
-          <Proveedoras asdsad = {handleChangeSelect} categoria = {select} />
+          <Proveedoras handleChangeSelect = {handleChangeSelect} select = {select} />
       </div>
 
       <div className='containerFather'>

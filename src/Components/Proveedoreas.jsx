@@ -10,25 +10,23 @@ const proveedor = [
 
 const DBProveedoras = ['electronics',"men's clothing","women's clothing", "jewelery"];
 
-export const Proveedoras = ({asdsad, categoria}) => {
+export const Proveedoras = ({handleChangeSelect, select}) => {
 
 // const [ selectedProveedor, setSelectedProveedor ] = useState ();
 
  const handleSelectChange = ( { value } ) => {
-  console.log(value);
-  setSelectedProveedor(value);
 
-
-
+  console.log(value)
+  handleChangeSelect(value)
  }
 
   return (
     <div className = "Proveedoras-contenedor">
-      <p><b>Selecciona un proveedor: </b>{categoria}</p>
-      <Select value = "algo"
+      <p><b>Selecciona un proveedor: </b>{select}</p>
+      <Select value={select}
       // defaultValue = { { label: 'Selecciona una opción', value: 'empty' } }
       options = {DBProveedoras.map(sup => ({label: sup, value: sup,}))}
-      onChange = {(event)=>{asdsad(event.target.value)}}
+      onChange = {handleSelectChange}
       />
     </div>
   )
