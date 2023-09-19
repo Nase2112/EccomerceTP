@@ -11,7 +11,7 @@ import Proveedoras from "./Components/Proveedoreas"
 function App() {
 
 
-
+  const [select, setSelect] = useState("")
   const [products, setProducts] = useState([]);
   const [copiaProducts, setCopiaProducts] = useState([]);
   const [search,setSearch] = useState();
@@ -30,6 +30,10 @@ function App() {
 
   }
 
+  const handleChangeSelect = (categoria) => {
+    setSelect(categoria)
+  }
+
   const handleChangePositionArray = (valor) =>{
     setPositionArray(positionArray + valor)
     setLastPositionArray(lastPositionArray + valor);
@@ -46,6 +50,7 @@ function App() {
   console.log(products);
   console.log(positionArray)
   console.log(lastPositionArray)
+  console.log(select);
   
   return (
     <>
@@ -53,7 +58,7 @@ function App() {
 
     <Aside function1 = { handleChangeText} function2 =  { handleSubmit}/>
       <div className="Select"> 
-          <Proveedoras/>
+          <Proveedoras asdsad = {handleChangeSelect} categoria = {select} />
       </div>
 
       <div className='containerFather'>
@@ -82,3 +87,4 @@ function App() {
 }
 
 export default App
+ 
