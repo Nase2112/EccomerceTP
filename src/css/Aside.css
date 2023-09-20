@@ -9,6 +9,7 @@
 aside {
     text-decoration: none;
     font-family: sans-serif;
+    width: 50vw;
 }
 
 .logo{
@@ -90,7 +91,7 @@ form{
 
 .lista {
     color: #ffff;
-    width:250px;
+    width: 30vw !important;
     height: 150vh;
     display: flex;
     justify-content: center;
@@ -100,7 +101,10 @@ form{
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(29,29,29,1) 48%);
     box-shadow: 7px 4px 9px -6px rgba(0,0,0,0.75);
     column-gap: 4rem;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .aside_item{
@@ -158,11 +162,13 @@ form{
 @media (max-width: 768px){
 
     .lista {
-        width: 200px;
-        height: 20vh;
+      display: flex ;
+      flex-direction: row;
         justify-content: center;
         flex-direction: column;
         border-radius: 0;
+        height: 100px;
+        width: 100%;
     }
 
     
@@ -170,5 +176,11 @@ form{
    li {
         display: none;
    }
+
     
+}
+
+
+@media (max-width: 375px){
+  
 }

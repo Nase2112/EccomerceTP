@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import "../css/Aside.css"
+//import "../css/Aside.css"
 import Search from "./Search";
 
 
@@ -18,8 +18,8 @@ const [open, setOpen] = useState(false)
 return(
         <>
         <aside>
-        <nav class="nav">
-            <ul class="lista">
+        <nav className="nav">
+            <ul className="lista">
                 <div className="logo"/>
                 
                 {/* <div className="search_bar">

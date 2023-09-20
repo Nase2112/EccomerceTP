@@ -1,4 +1,4 @@
-import "../css/MostrarDatos.css"
+//import "../css/MostrarDatos.css"
 
 const MostrarDatos = ({items}) =>{
         return(

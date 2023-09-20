@@ -1,5 +1,5 @@
 import { useState } from "react"
-import '../css/Pages.css'
+//import '../css/Pages.css'
 
 const Pages = ({nroPaginas,changePage,productsperPage}) => {
 

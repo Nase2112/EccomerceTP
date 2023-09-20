@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../css/Proveedoras.css'
+//import '../css/Proveedoras.css'
 import Select from 'react-select';
 
 const proveedor = [
